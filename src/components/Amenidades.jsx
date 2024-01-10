@@ -14,7 +14,7 @@ import yoga from '../assets/images/amenidades/yoga.png'
 import cine from '../assets/images/amenidades/cine.png'
 function Amenidades() {
   return (
-    <div className="bg-amenidades pt-10">
+    <div className="bg-amenidades py-10">
       <div className='flex flex-wrap justify-center mb-12'>
       <h3 className="text-3xl">AMENIDADES</h3>
       </div>

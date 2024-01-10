@@ -1,11 +1,13 @@
 import Seccion1 from './components/Seccion1'
-import Seccion2 from './components/Amenidades'
 import Amenidades from './components/Amenidades';
+import Mapa from './components/Mapa';
+
 function App() {
   return (
     <>
       <Seccion1 />
       <Amenidades />
+      <Mapa/>
     </>
   );
 }
