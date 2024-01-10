@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-image{
+  background-image: url('./assets/images/3.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom center;
+  
+}
+@media (max-width: 767.98px) {
+  .bg-image-movil {
+    background-image: url('./assets/images/banner-1-móvil.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+.colorBanner{
+  color:#257BAF;
+}
+
+.bg-color-banner{
+  background-color: #257BAF;
+}
+
+.bg-movil{
+  background-color: red;
+}
+
+.bg-amenidades {
+  background-color: #F2F2F2;
+}
+
+.color-titulos {
+  color: #6EC1E4;
+}
+.containerAmenidades div img{
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerAmenidades div p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
