@@ -2,6 +2,7 @@ import Seccion1 from './components/Seccion1'
 import Amenidades from './components/Amenidades';
 import Mapa from './components/Mapa';
 import Invierte from './components/Invierte';
+import Productos from './components/Productos';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Amenidades />
       <Mapa/>
       <Invierte/>
+      <Productos/>
     </>
   );
 }

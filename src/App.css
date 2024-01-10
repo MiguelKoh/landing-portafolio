@@ -64,6 +64,11 @@ body {
   margin-right: auto!important;
 }
 
+.containerProducto img {
+  width: 75%;
+}
+
+
 @media (max-width: 767.98px) {
   .containerAmenidades div img {
     width: 4rem;
@@ -74,4 +79,8 @@ body {
   margin-top: 1rem;
   text-align: center;
   font-weight: 600;
+}
+
+.bg-productos {
+  background-color: #C6C6C6;
 }

@@ -16,7 +16,7 @@ function Amenidades() {
   return (
     <div className="bg-amenidades py-10">
       <div className='flex flex-wrap justify-center mb-12'>
-      <h3 className="text-3xl">AMENIDADES</h3>
+      <h3 className="xs:text-2xl md:text-4xl">AMENIDADES</h3>
       </div>
     <div className='w-full flex justify-center'>
       <div className="containerAmenidades w-5/6 grid xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-5 items-center">

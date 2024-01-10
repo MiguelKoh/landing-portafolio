@@ -8,7 +8,7 @@ function Seccion1() {
         <div className="mt-2 text-white ">
           <p className="tracking-wider xs:text-2xl md:text-4xl">LOTES</p>
           <p className="xs:text-2xl md:text-4xl tracking-wider">URBANIZADOS</p>
-          <p className='text-2xl colorBanner'>ÚLTIMOS LOTES DISPONIBLES</p>
+          <p className='xs:text-lg md:text-2xl colorBanner xs:mt-1 md:mt-2'>ÚLTIMOS LOTES DISPONIBLES</p>
         </div>
         <button 
         className='mt-5 text-white text-lg bg-color-banner font-medium py-3 px-4 cursor-text' 
