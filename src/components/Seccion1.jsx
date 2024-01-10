@@ -2,9 +2,9 @@ import logoBlanco from "../assets/images/logo_santamar-03_opt.png";
 
 function Seccion1() {
   return (
-    <div className="bg-image bg-image-movil flex justify-center items-start h-screen"> {/* Asegúrate de que el contenedor ocupa toda la altura de la pantalla */}
-      <div className="text-center mt-10"> {/* Contenedor centrado para la imagen y el texto */}
-        <img src={logoBlanco} className="w-48 mx-auto" alt="Logo" /> {/* Imagen centrada */}
+    <div className="bg-image-seccion-1 flex justify-center items-start h-screen"> 
+      <div className="text-center mt-10">
+        <img src={logoBlanco} className="w-48 mx-auto" alt="Logo" />
         <div className="mt-2 text-white ">
           <p className="tracking-wider xs:text-2xl md:text-4xl">LOTES</p>
           <p className="xs:text-2xl md:text-4xl tracking-wider">URBANIZADOS</p>

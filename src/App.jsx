@@ -1,6 +1,7 @@
 import Seccion1 from './components/Seccion1'
 import Amenidades from './components/Amenidades';
 import Mapa from './components/Mapa';
+import Invierte from './components/Invierte';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Seccion1 />
       <Amenidades />
       <Mapa/>
+      <Invierte/>
     </>
   );
 }
