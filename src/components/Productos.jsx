@@ -11,18 +11,18 @@ function Productos() {
   return (
     <div className="bg-productos py-5">
         <div className="flex flex-wrap justify-center">
-            <div className="flex flex-wrap xs:justify-center md:justify-start w-9/12 bg-red-500">
-                <div className="md:w-1/12 bg-blue-600 flex justify-center">
-                    <img src={icono} className='w-12'/>
+            <div className="flex flex-wrap xs:justify-center md:justify-start w-9/12">
+                <div className="md:w-1/12 flex justify-center">
+                    <img src={icono} className='w-12 xs:pb-2'/>
                 </div>
-                <div className="md:w-9/12 bg-green-600 flex justify-start items-center" >
+                <div className="md:w-9/1 flex justify-start items-center mb-2" >
                 <p className=' xs:text-lg md:text-xl font-semibold xs:text-center'>PRODUCTOS DESARROLLADOS POR <span className='font-bold'>BLACK SWAN®</span></p>
                 </div>
             </div>
 
         </div>
-        <div className='bg-red-500 flex justify-center'>
-        <div className='containerProducto w-9/12 grid xs:grid-cols-2 xs:gap-y-6 md:grid-cols-6 gap-0 bg-slate-500 justify-center 
+        <div className='flex justify-center'>
+        <div className='containerProducto w-9/12 grid xs:grid-cols-2 xs:gap-y-6 md:grid-cols-3 lg:grid-cols-6 gap-0 justify-center 
          justify-items-center items-center py-2'>
             <img src={uno} alt="icono" />
             <img src={dos} alt="icono" />
