@@ -3,6 +3,7 @@ import Amenidades from './components/Amenidades';
 import Mapa from './components/Mapa';
 import Invierte from './components/Invierte';
 import Productos from './components/Productos';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Mapa/>
       <Invierte/>
       <Productos/>
+      <Footer/>
     </>
   );
 }
