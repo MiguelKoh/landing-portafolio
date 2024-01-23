@@ -5,6 +5,7 @@ import Invierte from './components/Invierte';
 import Productos from './components/Productos';
 import Footer from './components/Footer';
 import SeccionCarousel from './components/Carousel';
+import Contactanos from './components/Contactanos';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <SeccionCarousel/>
       <Mapa/>
       <Invierte/>
+      <Contactanos/>
       <Productos/>
       <Footer/>
     </>
