@@ -20,12 +20,23 @@ import siete from '../assets/images/galeria-opt/7.jpg'
 import ocho from '../assets/images/galeria-opt/8.jpg'
 import nueve from '../assets/images/galeria-opt/9.jpg'
 
-
- function Carousel () {
+const slides = [
+  { id: 1, src: uno },
+  { id: 2, src: dos },
+  { id: 3, src: tres },
+  { id: 4, src: cuatro },
+  { id: 5, src: cinco },
+  { id: 6, src: seis },
+  { id: 7, src: siete },
+  { id: 8, src: ocho },
+  { id: 9, src: nueve }
+];
+ 
+function Carousel () {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={10}
         slidesPerView={2}
         navigation
@@ -48,69 +59,13 @@ import nueve from '../assets/images/galeria-opt/9.jpg'
           },
         }}
       >
-        <SwiperSlide>
-          <img
-            src={uno}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={dos}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={tres}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={cuatro}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={cinco}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={seis}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={siete}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={ocho}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={nueve}
-            loading="lazy"
-          />
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img src={slide.src} loading="lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </SwiperSlide>
+        ))}
+      
       </Swiper>
     </>
   );

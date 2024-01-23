@@ -13,7 +13,7 @@ function Productos() {
         <div className="flex flex-wrap justify-center">
             <div className="flex flex-wrap xs:justify-center md:justify-start w-9/12">
                 <div className="md:w-1/12 flex justify-center">
-                    <img src={icono} className='w-12 xs:pb-2'/>
+                    <img src={icono} className='w-12 xs:pb-2' loading="lazy"/>
                 </div>
                 <div className="md:w-9/1 flex justify-start items-center mb-2" >
                 <p className=' xs:text-lg md:text-xl font-semibold xs:text-center'>PRODUCTOS DESARROLLADOS POR <span className='font-bold'>BLACK SWAN®</span></p>
@@ -24,12 +24,12 @@ function Productos() {
         <div className='flex justify-center'>
         <div className='containerProducto w-9/12 grid xs:grid-cols-2 xs:gap-y-6 md:grid-cols-3 lg:grid-cols-6 gap-0 justify-center 
          justify-items-center items-center py-2'>
-            <img src={uno} alt="icono" />
-            <img src={dos} alt="icono" />
-            <img src={tres} alt="icono" />
-            <img src={cinco} alt="icono" />
-            <img src={seis} alt="icono" />
-            <img src={siete} alt="icono" />
+            <img src={uno} alt="icono" loading="lazy"/>
+            <img src={dos} alt="icono" loading="lazy" />
+            <img src={tres} alt="icono" loading="lazy" />
+            <img src={cinco} alt="icono" loading="lazy" />
+            <img src={seis} alt="icono" loading="lazy"/>
+            <img src={siete} alt="icono" loading="lazy"/>
         </div>
         </div>
     </div>

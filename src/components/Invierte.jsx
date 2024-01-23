@@ -4,7 +4,7 @@ function Invierte() {
   return (
     <div className="bg-image-invierte xs:h-96 md:h-screen">
       <div className="flex flex-wrap justify-center pt-10">
-        <img src={logoBlanco} className=" xs:w-40 md:w-56 mx-auto" alt="Logo" />
+        <img src={logoBlanco} className=" xs:w-40 md:w-56 mx-auto" alt="Logo" loading="lazy"/>
       </div>
       <div className="flex flex-wrap justify-center bg-black/45 py-10 mt-3">
         <div className="w-full flex justify-center">
