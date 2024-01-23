@@ -4,12 +4,14 @@ import Mapa from './components/Mapa';
 import Invierte from './components/Invierte';
 import Productos from './components/Productos';
 import Footer from './components/Footer';
+import SeccionCarousel from './components/Carousel';
 
 function App() {
   return (
     <>
       <Seccion1 />
       <Amenidades />
+      <SeccionCarousel/>
       <Mapa/>
       <Invierte/>
       <Productos/>

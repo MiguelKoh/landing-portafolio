@@ -84,3 +84,8 @@ body {
 .bg-productos {
   background-color: #C6C6C6;
 }
+
+:root {
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+}
