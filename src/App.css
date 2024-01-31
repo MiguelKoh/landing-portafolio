@@ -58,20 +58,30 @@ body {
   background-color:#6EC1E4 ;
 }
 
+.containerAmenidades div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .containerAmenidades div img{
-  width: 5rem;
-  margin-left: auto!important;
-  margin-right: auto!important;
+  width: 6.5rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  
 }
 
 .containerProducto img {
-  width: 75%;
+  width: 8rem;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 
 @media (max-width: 767.98px) {
   .containerAmenidades div img {
-    width: 4rem;
+    width: 5rem;
   }
 }
 
@@ -88,4 +98,17 @@ body {
 :root {
   --swiper-navigation-color: #fff;
   --swiper-pagination-color: #fff;
+}
+
+.inputForm input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 2px solid #59C2BB!important;
+  
+}
+.inputForm input::placeholder {
+  color: #59C2BB;
 }

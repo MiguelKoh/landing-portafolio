@@ -22,14 +22,15 @@ function Productos() {
 
         </div>
         <div className='flex justify-center'>
-        <div className='containerProducto w-9/12 grid xs:grid-cols-2 xs:gap-y-6 md:grid-cols-3 lg:grid-cols-6 gap-0 justify-center 
+        <div className='containerProducto w-9/12 grid xs:grid-cols-2 xs:gap-y-6 md:grid-cols-3 lg:grid-cols-7 gap-0 justify-center 
          justify-items-center items-center py-2'>
             <img src={uno} alt="icono" loading="lazy"/>
             <img src={dos} alt="icono" loading="lazy" />
             <img src={tres} alt="icono" loading="lazy" />
+            <img src={cuatro} alt="icono" loading="lazy" />
             <img src={cinco} alt="icono" loading="lazy" />
             <img src={seis} alt="icono" loading="lazy"/>
-            <img src={siete} alt="icono" loading="lazy"/>
+            <img src={siete} alt="icono" loading="lazy" className='xs:col-span-2 md:col-span-3 lg:col-span-1'/>
         </div>
         </div>
     </div>

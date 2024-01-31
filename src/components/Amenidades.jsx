@@ -12,6 +12,7 @@ import pista from '../assets/images/amenidades/pista.png'
 import temazal from '../assets/images/amenidades/temazcal.png'
 import yoga from '../assets/images/amenidades/yoga.png'
 import cine from '../assets/images/amenidades/cine.png'
+
 function Amenidades() {
   return (
     <div className="bg-amenidades py-10">
