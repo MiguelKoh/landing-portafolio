@@ -14,7 +14,7 @@ function Invierte() {
         </p>
         </div>
         <div className="w-full flex justify-center mt-5">
-        <button className="bg-btn-asesor xs:py-2 xs:px-3 md:py-3 md:px-4 text-white xs:text-sm md:text-lg">Contactar a un asesor</button>
+        <button className="bg-btn-asesor xs:py-2 xs:px-3 md:py-3 md:px-4 text-white xs:text-sm md:text-lg hover:opacity-95">Contactar a un asesor</button>
         </div>
       </div>
       
