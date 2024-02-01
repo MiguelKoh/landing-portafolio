@@ -132,8 +132,30 @@ function Formulario() {
       
       )}
       
+
+      {formStep === 2 && (
+      <>
+        <label>Este producto se encuentra en Sisal, Yucatán, ¿Deseas continuar?</label>
+       
+        <div className="flex justify-between">
+          <input
+                type="button"
+                value="Atras"
+                className="w-28 bg-[#59C2BB] text-white font-semibold cursor-pointer hover:opacity-90 mt-3"
+                onClick={()=>{setformStep(1)}}
+              />
+
+              <input
+                type="button"
+                value="Siguiente"
+                className="w-28 bg-[#59C2BB] text-white font-semibold cursor-pointer hover:opacity-90 mt-3"
+                onClick={()=>{setformStep(3)}}
+              />
+          </div>
+
+      </>)}
       
-      { formStep ===2 && (
+      { formStep ===3 && (
       <>
           {/* Campo de para que deseas invertir */}
           <label className="pt-3 pb-2">¿Para qué deseas invertir?</label>
@@ -173,7 +195,7 @@ function Formulario() {
                 type="button"
                 value="Atras"
                 className="w-28 bg-[#59C2BB] text-white font-semibold cursor-pointer hover:opacity-90 mt-3"
-                onClick={()=>{setformStep(1)}}
+                onClick={()=>{setformStep(2)}}
               />
 
               <input
