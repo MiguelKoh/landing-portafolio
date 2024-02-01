@@ -106,9 +106,17 @@ body {
   border-radius: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border: 2px solid #59C2BB!important;
+  border: 2px solid #59C2BB;
+ /*margin-top: 0.75rem;*/
+  
   
 }
 .inputForm input::placeholder {
   color: #59C2BB;
+}
+
+.inputForm label {
+  color:#59C2BB;
+  font-weight: 600;
+
 }
