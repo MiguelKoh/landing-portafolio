@@ -6,27 +6,28 @@ import {useState} from 'react'
 const validationSchema = yup.object({
   nombre: yup
     .string()
-    .required("Nombre es requerido")
+    .required("Campo requerido")
     .min(2, "El nombre debe tener al menos 2 caracteres")
     .max(20, "Los nombres deben tener máximo al menos 20 caracteres"),
   
   apellidos: yup
     .string()
-    .required("Apellidos son requeridos")
+    .required("Campo requerido")
     .min(2, "Los apellidos deben tener al menos 2 caracteres")
     .max(20, "Los apellidos deben tener máximo 20 caracteres"),
   
   correo: yup
     .string()
-    .required("Correo es requerido")
-    .email("Correo no válido"),
+    .required("Campo requerido")
+    .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "Por favor introduce un formato de correo válido"),
   
-  ciudad: yup.string().required("Ciudad es requerido"),
+  ciudad: yup.string().required("Campo requerido"),
   
   telefono: yup
     .string()
-    .required("Teléfono es requerido")
+    .required("Campo requerido")
     .matches(/^\d{10}$/, "Por favor introduce un número de teléfono válido"),
+  
   deseas: yup.string().required("Campo requerido"),
   tiempo: yup.string().required("Campo requerido"),
 });
@@ -131,6 +132,7 @@ function Formulario() {
       
       )}
       
+      
       { formStep ===2 && (
       <>
           {/* Campo de para que deseas invertir */}
@@ -140,7 +142,6 @@ function Formulario() {
             className="py-3 px-3 border-2 border-[#59C2BB] rounded text-[#59C2BB]"
             {...register("deseas")}
           >
-            <option value="" disabled selected>Seleccione una opción</option>
             <option value="Para vivir">Para vivir</option>
             <option value="Para comprar y revender">Para comprar y revender</option>
           </select>
@@ -157,7 +158,6 @@ function Formulario() {
             className="py-3 px-3 border-2 border-[#59C2BB] rounded text-[#59C2BB]"
             {...register("tiempo")}
           >
-            <option value="" disabled selected>Seleccione una opción</option>
             <option value="Inmediatamente">Inmediatamente</option>
             <option value="12 meses">12 meses</option>
             <option value="2 años">2 años</option>
