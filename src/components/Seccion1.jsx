@@ -1,4 +1,5 @@
 import logoBlanco from "../assets/images/logo_santamar-03_opt.png";
+import BotonWhatsapp from './BotonWhatsapp'
 
 function Seccion1() {
   return (
@@ -15,6 +16,7 @@ function Seccion1() {
         >DESDE $389,767 MXN</button>
         <p className='colorBanner text-lg mt-2 font-medium'>SISAL, YUCATÁN</p>
       </div>
+      <BotonWhatsapp/>
     </div>
   );
 }
