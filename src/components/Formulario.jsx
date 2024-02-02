@@ -210,7 +210,7 @@ function Formulario() {
       ) }
 
       <pre>
-        {JSON.stringify(watch(),null,2)}
+        {/*JSON.stringify(watch(),null,2)*/}
       </pre>
 
     </form>
