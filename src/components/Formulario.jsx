@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {useState} from 'react'
+import {Navigate, useNavigate} from 'react-router-dom'
 
 const validationSchema = yup.object({
   nombre: yup
@@ -35,6 +36,8 @@ const validationSchema = yup.object({
 function Formulario() {
   
  const [formStep, setformStep] = useState(1)
+ const navigate = useNavigate(); // Correcto uso de useNavigate aquí
+
 
   const {
     register,
@@ -44,14 +47,15 @@ function Formulario() {
     trigger,
   } = useForm({ resolver: yupResolver(validationSchema), mode: "onTouched" });
 
-  const onSubmit = handleSubmit((data) => {
-   // console.log(data);
-  });
+  const onSubmit = (data) => {
+    console.log(data);
+    navigate('/enviado'); // Usar navigate aquí
+  };
 
   //console.log(errors);
   return (
     <form
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit(onSubmit)}
       className="flex flex-wrap w-96 flex-col inputForm"
     >
       {formStep=== 1 && (

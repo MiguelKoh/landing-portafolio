@@ -120,3 +120,10 @@ body {
   font-weight: 600;
 
 }
+
+.bg-image-enviado { 
+  background-image: url('./assets/images/fondo_enviado_opt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
