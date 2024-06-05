@@ -1,9 +1,31 @@
 import logoBlanco from "../assets/images/logo_santamar-03_opt.png";
 import BotonWhatsapp from './BotonWhatsapp'
+import { useState, useEffect } from "react";
 
 function Seccion1() {
+ 
+  const [clase1, setClase1] = useState(false)
+  const [clase2, setClase2] = useState(true) 
+
+  const activarClase = ()=> {
+     setClase1(!clase1)
+     setClase2(!clase2)
+   }
+
+    //  useEffect(()=>{
+       
+    //  },[])
+
+
   return (
-    <div className="bg-image-seccion-1 flex justify-center items-start h-screen"> 
+    <div className="bg-image-seccion-1 flex justify-center items-start h-screen relative">
+      
+      <div className="btnIdioma">
+        <p onClick={()=>{activarClase()}} className={clase1 ? "text-glow":""}>EN</p>
+        <p>|</p>
+        <p onClick={()=>{activarClase()}} className={clase2 ? "text-glow":""}>ES</p>
+      </div>
+
       <div className="text-center mt-10">
         <img src={logoBlanco} className="w-48 mx-auto" alt="Logo" />
         <div className="mt-2 text-white ">

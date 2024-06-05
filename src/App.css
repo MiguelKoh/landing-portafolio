@@ -9,6 +9,36 @@
   padding: 0;
 }
 
+.btnIdioma {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 7rem;
+  top: 4rem;
+}
+
+.btnIdioma p:nth-child(1),.btnIdioma p:nth-child(3) {
+  color: #fff;
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  cursor: pointer;
+
+}
+
+.btnIdioma p:nth-child(2){
+  color: #fff;
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  margin-left: 0.25rem; /* 4px */
+  margin-right: 0.25rem;
+}
+
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
 .bg-image-seccion-1{
   background-image: url('./assets/images/3.jpg');
   background-size: cover;
