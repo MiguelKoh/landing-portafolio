@@ -2,7 +2,7 @@ import icono from "../assets/images/icono_blanco_opt.png";
 
 function Footer() {
   return (
-    <div className="bg-btn-asesor flex flex-wrap justify-center py-3">
+    <div className="bg-btn-asesor flex flex-wrap justify-center py-3 z-10 relative">
         <div className="flex flex-wrap w-9/12">
             <div className="xs:w-full md:w-1/12 flex justify-center items-center">
                 <img src={icono} className="w-12" loading="lazy"/>

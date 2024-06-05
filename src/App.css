@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 * {
   margin: 0;
@@ -78,11 +80,52 @@ body {
   object-fit: contain;
 }
 
+.subrayado {
+  font-weight: 600;
+  color: #5DC2BA;
+}
+
+.contenedorInvertir {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorImagenesInvertir img {
+  width: 7rem; 
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  
+}
+
+
 
 @media (max-width: 767.98px) {
+
+  .imagenMapa {
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+  }
+
+  .imagenInvertir {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+  .contenedorImagenesInvertir img {
+   padding-top:0.25rem;
+   padding-bottom:0.50rem;
+  }
+
+
   .containerAmenidades div img {
     width: 5rem;
   }
+
+  .containerProducto img {
+    width: 7rem;
+  }
+
 }
 
 .containerAmenidades div p {
@@ -121,9 +164,147 @@ body {
 
 }
 
-.bg-image-enviado { 
+/* .bg-image-enviado { 
   background-image: url('./assets/images/fondo_enviado_opt.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
+} */
+
+.circulo_ultimosClusters {
+  border-radius: 9999px;
+  width: 26rem;
+  height: 26rem;
+  background-color: #fff;
+  margin-left: -40px;
+  z-index: 6;
+
 }
+
+.mapa {
+  width: 27rem;
+  /* height: auto; */
+  margin-right: -40px;
+}
+
+.estiloLetra {
+  text-decoration: underline;
+  color: #5DC2BA;
+  font-weight: 700;
+}
+
+.estiloLetra2 {
+  color: #5DC2BA;
+  font-weight: 700;
+}
+
+.borde {
+    border-style: solid;
+    border-width: 0px 4px 0px 0px;
+    border-color: #59C2BB;
+}
+
+.planta1{
+  width: 16rem/* 240px */;
+  position: absolute;
+  left: 17%;
+}
+
+.planta2{
+  width: 16rem/* 240px */;
+  position: absolute;
+  z-index: 5;
+  right: 15%;
+}
+
+.contenedorUltimosClusters {
+  background-color: #5DC2BA;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.contenedorCotizador {
+  background-image: url(./assets/images/fondo-azul-cotizador_opt.jpg) ;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  flex-direction: column;
+  z-index: 20;
+  margin-bottom: 2rem;
+}
+
+.contenedorCotizador p, .contenedorCotizador label {
+  color: #fff;
+}
+
+.contenedorCotizador select {
+  outline: none;
+}
+
+
+
+
+@media (max-width: 768px) { 
+
+  .planta1 {
+    display: none;
+  }
+ .planta2{
+  display: none;
+ }
+
+ .circulo_ultimosClusters{
+  margin-left:0px ;
+  width: 23rem;
+  height: 23rem;
+ 
+}
+.textos p {
+  font-size: 0.9rem;
+}
+
+ .mapa{
+  margin-right: 0px;
+  width: 24rem;
+  margin-top: 2rem;
+ }
+
+ .contenedorUltimosClusters {
+  height: auto;
+ }
+
+ .contenedorCirculo {
+  margin-top: -2rem;
+  z-index: 10;
+ }
+ .contenedorCotizador p, 
+ .contenedorCotizador label, 
+ .contenedorCotizador input, 
+ .contenedorCotizador select{
+  text-align: center;
+}
+.contenedorCotizador {
+  width: 75%;
+}
+
+.invertirImagenPlanta{
+  display: none;
+}
+
+}
+
+@media (min-width: 769px) {
+  .bg-image-enviado { 
+    background-image: url('./assets/images/fondo_enviado_opt.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+
+}
+
+

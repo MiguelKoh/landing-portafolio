@@ -1,4 +1,5 @@
 import logoBlanco from "../assets/images/logo_santamar-03_opt.png";
+import { HashLink } from 'react-router-hash-link';
 
 function Invierte() {
   return (
@@ -14,7 +15,7 @@ function Invierte() {
         </p>
         </div>
         <div className="w-full flex justify-center mt-5">
-        <button className="bg-btn-asesor xs:py-2 xs:px-3 md:py-3 md:px-4 text-white xs:text-sm md:text-lg hover:opacity-95">Contactar a un asesor</button>
+        <HashLink smooth to="#contactanos" className="bg-btn-asesor rounded xs:py-2 xs:px-3 md:py-3 md:px-4 text-white xs:text-sm md:text-lg hover:opacity-95">Contactar a un asesor</HashLink>
         </div>
       </div>
       
