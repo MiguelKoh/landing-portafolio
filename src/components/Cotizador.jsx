@@ -2,13 +2,14 @@ import logo from "../assets/images/logo_santamar-03_opt.png"
 import { lotes, mensualidades } from "../data/lotesYmensualidades"
 import { useState, useEffect } from "react";
 import formatearCantidad from "../convertirAmoneda";
+import {useTranslation} from "react-i18next"
 
 function Cotizador() {
   const [selectedLote, setSelectedLote] = useState("");
   const [selectedMensualidad, setSelectedMensualidad] = useState("");
   const [enganche, setEnganche] = useState(formatearCantidad(0))
   const [pagoMensual, setPagoMensual] = useState(formatearCantidad(0))
-
+  const [t]= useTranslation("global");
  
 
   const handleChange = (e)=> {
@@ -40,7 +41,7 @@ function Cotizador() {
   return (
       <div className="contenedorCotizador py-4 px-3">
         <h2 className="text-white font-medium xs:text-xl md:text-2xl text-center pb-2 pt-4">
-          FINANCIAMIENTO DIRECTO CON NOSOTROS
+        {t("cotizador.titulo")}
         </h2>
         <form action="">
           
@@ -49,10 +50,10 @@ function Cotizador() {
                 <div className="xs:w-full md:w-6/12 p-2 flex flex-wrap justify-center">
               
               <div className="w-[90%] mb-2">
-                  <label htmlFor="lotes" className="mb-2 block">Lotes</label>
+                  <label htmlFor="lotes" className="mb-2 block">{t("cotizador.lotes")}</label>
                 
                 <select name="lotes" value={selectedLote} onChange={handleChange} className="w-full p-[0.6rem] rounded-sm">
-                  <option value="" disabled>Seleccione un lote</option>
+                  <option value="" disabled>{t("cotizador.selectLote")}</option>
                     {lotes.map((lote)=>{
                      return <option key={lote.id} value={lote.precio}>{lote.nombre}</option>
                     })}
@@ -62,9 +63,9 @@ function Cotizador() {
               </div>
               
               <div className="w-[90%] mb-2">
-                <label htmlFor="mensualidades" className="mb-2 block">Mensualidades</label>
+                <label htmlFor="mensualidades" className="mb-2 block">{t("cotizador.mensualidades")}</label>
                 <select name="mensualidades" value={selectedMensualidad} onChange={handleChange} className="w-full p-[0.6rem] rounded-sm">
-                  <option value="" disabled >Seleccione una mensualidad</option>
+                  <option value="" disabled >{t("cotizador.selectMensualidad")}</option>
                     {mensualidades.map((mensualidad)=>{
                       return <option key={mensualidad.id} value={mensualidad.valor}>{mensualidad.nombre}</option>
                     })}
@@ -76,13 +77,13 @@ function Cotizador() {
 
                 <div className="xs:w-full md:w-6/12 p-2 flex flex-wrap justify-center">
               <div className="w-[90%] mb-2">
-                <label htmlFor="enganche" className="mb-2 block">Enganche - 15%</label>
-                <input type="text" id="enganche" value={enganche} readOnly className="w-full p-2 rounded-sm" />
+                <label htmlFor="enganche" className="mb-2 block">{t("cotizador.enganche")}</label>
+                <input type="text" id="enganche" value={enganche} readOnly className="w-full p-2 pl-3 rounded-sm" />
               </div>
 
               <div className="w-[90%]">
-                <label htmlFor="pagoMensual" className=" mb-2 block">Pago Mensual</label>
-                <input type="text" id="pagoMensual" value={pagoMensual} readOnly className="w-full p-2 rounded-sm" />
+                <label htmlFor="pagoMensual" className=" mb-2 block">{t("cotizador.pagoMensual")}</label>
+                <input type="text" id="pagoMensual" value={pagoMensual} readOnly className="w-full p-2 pl-3 rounded-sm" />
               </div>
                 </div>
             </div>
@@ -90,7 +91,7 @@ function Cotizador() {
         </form>
         <div className="w-full flex flex-col items-center justify-center py-3">
           {/* <img src={logo} alt="logo"  className=" xs:w-[40%] md:w-[30%] lg:w-[20%] py-3"/> */}
-          <p className="text-center text-sm">Información meramente informativa y sujeto a cambio de precio sin previo aviso*</p>
+          <p className="text-center text-sm">{t("cotizador.leyenda")}</p>
         </div>
       </div>
     

@@ -12,29 +12,32 @@ import pista from '../assets/images/amenidades/pista.png'
 import temazal from '../assets/images/amenidades/temazcal.png'
 import yoga from '../assets/images/amenidades/yoga.png'
 import cine from '../assets/images/amenidades/cine.png'
+import {useTranslation} from "react-i18next"
 
 function Amenidades() {
+  const [t]= useTranslation("global");
+  
   return (
     <div className="bg-amenidades py-10">
       <div className='flex flex-wrap justify-center mb-12'>
-      <h3 className="xs:text-2xl md:text-4xl">AMENIDADES</h3>
+      <h3 className="xs:text-2xl md:text-4xl">{t("amenidades.titulo")}</h3>
       </div>
     <div className='w-full flex justify-center'>
       <div className="containerAmenidades w-5/6 grid xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-5 items-center">
-          <div><img src={playa}/> <p>Club de playa</p></div>
-          <div><img src={cine}/><p>Cine al aire libre</p></div>
-          <div><img src={corredor}/><p>Corredor cultural</p></div>
-          <div><img src={asadores}/><p>Área de asaderos</p></div>
-          <div><img src={fogata}/><p>Fogata</p></div>
-          <div><img src={yoga}/><p>Área de yoga y pilates</p></div>
-          <div><img src={pet}/><p>Parque pet friendly</p></div>
-          <div><img src={gym}/><p>Gimnasio al aire libre</p></div>
-          <div><img src={temazal} /><p>Temazcal</p></div>
-          <div><img src={picnicDia} /><p>Picnic de día</p></div>
-          <div><img src={areaDeJuegos} /><p>Juegos infantiles</p></div>
-          <div><img src={picnicNoche} /><p>Picnic de noche</p></div>
-          <div><img src={pista} /><p>Pista multifuncional</p></div>
-          <div><img src={crecimiento} /><p>Crecimiento economico</p></div>
+          <div><img src={playa}/> <p>{t("amenidades.clubDeplaya")}</p></div>
+          <div><img src={cine}/><p>{t("amenidades.cineAlAireLibre")}</p></div>
+          <div><img src={corredor}/><p>{t("amenidades.corredorCultural")}</p></div>
+          <div><img src={asadores}/><p>{t("amenidades.areaDeAsaderos")}</p></div>
+          <div><img src={fogata}/><p>{t("amenidades.fogata")}</p></div>
+          <div><img src={yoga}/><p>{t("amenidades.areaYoga")}</p></div>
+          <div><img src={pet}/><p>{t("amenidades.parquePet")}</p></div>
+          <div><img src={gym}/><p>{t("amenidades.gym")}</p></div>
+          <div><img src={temazal} /><p>{t("amenidades.temazcal")}</p></div>
+          <div><img src={picnicDia} /><p>{t("amenidades.picnicDia")}</p></div>
+          <div><img src={areaDeJuegos} /><p>{t("amenidades.picnicNoche")}</p></div>
+          <div><img src={picnicNoche} /><p>{t("amenidades.juegosInfantiles")}</p></div>
+          <div><img src={pista} /><p>{t("amenidades.pista")}</p></div>
+          <div><img src={crecimiento} /><p>{t("amenidades.crecimientoEconomico")}</p></div>
       </div>
     </div>
     </div>

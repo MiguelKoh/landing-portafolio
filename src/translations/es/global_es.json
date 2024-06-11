@@ -1,0 +1,126 @@
+{
+    "primeraSeccion": {
+      "lotes": "LOTES",
+      "urbanizados": "URBANIZADOS",
+      "ultimosLotes": "ÚLTIMOS LOTES DISPONIBLES",
+      "desde": "Desde"
+    },
+  
+    "segundaSeccion": {
+      "porqueInvertir": "¿POR QUÉ INVERTIR EN SISAL, YUCATÁN?",
+      "primerParrafo": {
+        "principal": "El crecimiento del estado de Yucatán ha sido notorio en los últimos años, lo cual lo convierte en una región sumamente atractiva para invertir. Existen diversas razones que respaldan esta afirmación y demuestran por qué invertir en Yucatán es una decisión acertada. ",
+        "span1": "La región es reconocida a nivel mundial por sus hermosas playas, su rica historia y su cultura única."
+      },
+      "segundoParrafo": {
+        "span1": "Yucatán",
+        "span2": "se destaca por ser un ",
+        "span3": "estado seguro y con una calidad de vida envidiable. ",
+        "principal": "Sus índices de seguridad son de los más altos en comparación con otros estados de México, lo que brinda tranquilidad a los inversionistas y sus familias. Sisal es una localidad ubicada frente al mar de la costa yucateca que en los últimos años ha tomado notoriedad debido a ser distinguido como ",
+        "span4": "Pueblo Mágico y Playa Platino, ",
+        "span5": "cual lo hace ideal para invertir. Esta localidad ofrece diversas razones para invertir en ella."
+      },
+      "icono1": "Cuenta con un crecimiento econ\u00f3mico sostenido.",
+      "icono2": "Potencial tur\u00edstico: la localidad se encuentra en una zona costera de gran belleza y atractivo natural."
+    },
+  
+    "amenidades": {
+      "titulo":"AMENIDADES",
+      "clubDeplaya": "Club de playa",
+      "cineAlAireLibre": "Cine al aire libre",
+      "corredorCultural": "Corredor cultural",
+      "areaDeAsaderos": "Área de asaderos",
+      "fogata": "Fogata",
+      "areaYoga": "Área de yoga y pilates",
+      "parquePet": "Parque pet friendly",
+      "gym": "Gimnasio al aire libre",
+      "temazcal": "Temazcal",
+      "picnicDia": "Picnic de día",
+      "picnicNoche": "Picnic de noche",
+      "juegosInfantiles": "Juegos infantiles",
+      "pista": "Pista multifuncional",
+      "crecimientoEconomico": "Crecimiento economico"
+    },
+  
+    "ultimosClusters":{
+        "titulo":"ÚLTIMOS CLUSTERS DISPONIBLES",
+        "col1":{
+            "span1":"Elige tu terreno hasta",
+            "span2":"48 meses",
+            "span3":"sin intereses"
+        },
+        "col2":{
+            "span1":"Mensualidades desde",
+            "span2":"$6,496 MXN"
+        }
+    },
+
+    "cotizador":{
+        "titulo":"FINANCIAMIENTO DIRECTO CON NOSOTROS",
+        "lotes":"Lotes",
+        "selectLote":"Seleccione un lote",
+        "mensualidades":"Mensualidades",
+        "selectMensualidad":"Seleccione una mensualidad",
+        "enganche":"Enganche - 15%",
+        "pagoMensual":"Pago Mensual",
+        "leyenda":"Información meramente informativa y sujeto a cambio de precio sin previo aviso*"
+    },
+
+    "invierte":{
+        "span1":"Invierte",
+        "span2":"desde $389,767 pesos en hasta",
+        "span3":"48 meses",
+        "span4": "sin intereses",
+        "btnContactar":"Contactar a un asesor"
+    },
+
+    "contactanos":"CONTÁCTANOS",
+
+    "formulario":{
+        "nombres":"Nombres(s)",
+        "apellidos":"Apellidos(s)",
+        "correo":"Correo electrónico",
+        "ciudad":"Ciudad",
+        "telefono":"Teléfono",
+        "campoRequerido":"Campo requerido",
+        "paso2": "Este producto se encuentra en Sisal, Yucatán, ¿Deseas continuar?",
+        "nombreMinimo":"El nombre debe tener al menos 2 caracteres",
+        "nombreMaximo":"Los nombres deben tener máximo al menos 20 caracteres",
+        "apellidoMinimo":"El apellido debe tener al menos 2 caracteres",
+        "apellidoMaximo":"El apellido deben tener máximo al menos 20 caracteres",
+        "correoValido":"Por favor introduce un formato de correo válido",
+        "telefonoValido":"Por favor introduce un número de teléfono válido",
+        "paso3Pregunta1": "¿Para qué deseas invertir?",
+        "paso3Pregunta1option1":"Para vivir",
+        "paso3Pregunta1option2":"Para comprar y revender",
+        "paso3Pregunta2": "¿En cuánto tiempo deseas realizar tu inversión?",
+        "paso3Pregunta2option1":"Inmediatamente",
+        "paso3Pregunta2option2":"12 meses",
+        "paso3Pregunta2option3":"2 años",
+        "paso3Pregunta2option4":"3 años o más",
+        "siguiente":"Siguiente",
+        "enviar":"Enviar",
+        "atras":"Atras"    
+        
+    },
+
+    "productos":{
+      "titulo":"PRODUCTOS DESARROLLADOS POR"
+    },
+
+    "footer":{
+      "p1":"PRODUCTO INMOBILIARIO",
+      "p2": "DESARROLLADO POR BLACK SWAN",
+      "politica":"POLITICA DE PRIVACIDAD"
+    },
+
+    "enviado": {
+      "p1":"Gracias por dejarnos tus datos,",
+      "p2":"en la brevedad un asesor se pondrá en contacto",
+      "p3": "contigo"
+    },
+
+    "aviso":"*Esta es una landing page NO oficial, creada únicamente con fines demostrativos para un portafolio web"
+
+}
+  

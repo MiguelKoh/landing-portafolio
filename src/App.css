@@ -9,6 +9,17 @@
   padding: 0;
 }
 
+.aviso{
+  position: absolute;
+  color: #fff;
+  width: 25%;
+  text-align: justify;
+  top: 4rem;
+  top: 8rem;
+  left: 4rem;
+  font-weight: 600;
+}
+
 .btnIdioma {
   display: flex;
   flex-direction: row;
@@ -53,6 +64,26 @@
 }
 
 @media (max-width: 767.98px) {
+
+  .aviso {
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 32rem;
+  }
+
+  .btnIdioma {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btnIdioma p {
+    font-size: 1.25rem!important/* 24px */;
+    line-height: 2rem!important;
+    
+  }
+
+
   .bg-image-seccion-1 {
     background-image: url('./assets/images/banner-1-móvil.jpg');
     width: 100%;
@@ -279,6 +310,11 @@ body {
 
 
 @media (max-width: 768px) { 
+
+  .borde {
+    border-style: none;
+}
+ 
 
   .planta1 {
     display: none;

@@ -6,8 +6,10 @@ import cuatro from '../assets/images/black-swan/4_opt.png'
 import cinco from '../assets/images/black-swan/5_opt.png'
 import seis from '../assets/images/black-swan/6_opt.png'
 import siete from '../assets/images/black-swan/7_opt.png'
+import {useTranslation} from "react-i18next"
 
 function Productos() {
+const [t]= useTranslation("global");
   return (
     <div className="bg-productos py-5">
         <div className="flex flex-wrap justify-center">
@@ -16,7 +18,7 @@ function Productos() {
                     <img src={icono} className='w-12 xs:pb-2' loading="lazy"/>
                 </div>
                 <div className="md:w-9/1 flex justify-start items-center mb-2" >
-                <p className=' xs:text-lg md:text-xl font-semibold xs:text-center'>PRODUCTOS DESARROLLADOS POR <span className='font-bold'>BLACK SWAN®</span></p>
+                <p className=' xs:text-lg md:text-xl font-semibold xs:text-center'>{t("productos.titulo")} <span className='font-bold'>BLACK SWAN®</span></p>
                 </div>
             </div>
 

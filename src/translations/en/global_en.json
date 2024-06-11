@@ -1,0 +1,130 @@
+{
+  "primeraSeccion": {
+    "lotes": "LOTS",
+    "urbanizados": "URBANIZED",
+    "ultimosLotes": "LAST AVAILABLE LOTS",
+    "desde": "From"
+  },
+
+  "segundaSeccion": {
+    "porqueInvertir": "WHY INVEST IN SISAL, YUCATAN?",
+    "primerParrafo": {
+      "principal": "The growth of the state of Yucatan has been remarkable in recent years, making it an extremely attractive region for investment. There are various reasons that support this statement and show why investing in Yucatan is a wise decision. ",
+      "span1": "The region is recognized worldwide for its beautiful beaches, rich history, and unique culture."
+    },
+    "segundoParrafo": {
+      "span1": "Yucatan",
+      "span2": "stands out for being a ",
+      "span3": "safe state with an enviable quality of life. ",
+      "principal": "Its security indexes are among the highest compared to other states in Mexico, providing peace of mind to investors and their families. Sisal is a town located on the coast of Yucatan that has gained prominence in recent years due to being distinguished as a ",
+      "span4": "Magical Town and Platinum Beach ",
+      "span5": "making it ideal for investment. This locality offers various reasons to invest in it."
+    },
+    "icono1": "It has sustained economic growth.",
+    "icono2": "Tourist potential: the town is located in a coastal area of great beauty and natural attraction."
+  },
+
+  "amenidades": {
+  "titulo": "AMENITIES",
+  "clubDeplaya": "Beach club",
+  "cineAlAireLibre": "Outdoor cinema",
+  "corredorCultural": "Cultural corridor",
+  "areaDeAsaderos": "Grill area",
+  "fogata": "Bonfire",
+  "areaYoga": "Yoga and pilates area",
+  "parquePet": "Pet-friendly park",
+  "gym": "Outdoor gym",
+  "temazcal": "Temazcal",
+  "picnicDia": "Daytime picnic",
+  "picnicNoche": "Nighttime picnic",
+  "juegosInfantiles": "Playground",
+  "pista": "Multipurpose track",
+  "crecimientoEconomico": "Economic growth"
+},
+
+"ultimosClusters": {
+  "titulo": "LAST AVAILABLE CLUSTERS",
+  "col1": {
+    "span1": "Choose your land up to",
+    "span2": "48 months",
+    "span3": "interest-free"
+  },
+  "col2": {
+    "span1": "Monthly payments from",
+    "span2": "$6,496 MXN"
+  }
+},
+
+"cotizador": {
+  "titulo": "DIRECT FINANCING WITH US",
+  "lotes": "Plots",
+  "selectLote": "Select a plot",
+  "mensualidades": "Monthly Payments",
+  "selectMensualidad": "Select a monthly payment",
+  "enganche": "Down Payment - 15%",
+  "pagoMensual": "Monthly Payment",
+  "leyenda": "Information provided is for informational purposes only and subject to price change without prior notice*"
+},
+
+"invierte": {
+    "span1": "Invest",
+    "span2": "from $389,767 pesos in up to",
+    "span3": "48 months",
+    "span4": "interest-free",
+    "btnContactar": "Contact an advisor"
+},
+
+
+"contactanos":"CONTACT US",
+
+"formulario": {
+    "nombres": "First Name",
+    "apellidos": "Last Name",
+    "correo": "Email",
+    "ciudad": "City",
+    "telefono": "Phone",
+    "campoRequerido": "Field required",
+    "paso2": "This product is located in Sisal, Yucatán. Do you wish to continue?",
+    "nombreMinimo": "The name must be at least 2 characters long",
+    "nombreMaximo": "Names must be a maximum of 20 characters",
+    "apellidoMinimo": "The last name must be at least 2 characters long",
+    "apellidoMaximo": "Last names must be a maximum of 20 characters",
+    "correoValido": "Please enter a valid email format",
+    "telefonoValido": "Please enter a valid phone number",
+    "paso3Pregunta1": "Why do you want to invest?",
+    "paso3Pregunta1option1": "To live",
+    "paso3Pregunta1option2": "To buy and resell",
+    "paso3Pregunta2": "When do you want to make your investment?",
+    "paso3Pregunta2option1": "Immediately",
+    "paso3Pregunta2option2": "12 months",
+    "paso3Pregunta2option3": "2 years",
+    "paso3Pregunta2option4": "3 years or more",
+    "siguiente":"Next",
+    "enviar":"Submit",
+    "atras":"Back"
+
+},
+
+"productos":{
+      "titulo":"PRODUCTS DEVELOPED BY"
+    },
+
+  "footer": {
+    "p1": "REAL ESTATE PRODUCT",
+    "p2": "DEVELOPED BY BLACK SWAN",
+    "politica": "PRIVACY POLICY"
+},
+
+"enviado": {
+  "p1": "Thank you for providing your information,",
+  "p2": "an advisor will contact you shortly",
+  "p3": "to assist you"
+},
+
+ "aviso": "*This is an unofficial landing page, created solely for demonstration purposes for a web portfolio"
+
+
+
+
+
+}

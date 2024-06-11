@@ -4,8 +4,10 @@ import logo from "../assets/images/logo-azul-santamar_opt.png";
 import planta1 from "../assets/images/Planta-1_opt.png";
 import planta2 from "../assets/images/Planta-2_opt.png";
 import Cotizador from "./Cotizador";
+import {useTranslation} from "react-i18next"
 
 function UltimosClusters() {
+  const [t]= useTranslation("global");
   return (
     <div className="contenedorUltimosClusters">
       <div className="w-full md:w-2/3 flex flex-wrap justify-center items-center py-10">
@@ -20,17 +22,17 @@ function UltimosClusters() {
             <div className="flex flex-col justify-center items-center">
               <img src={logo} className="w-40 mt-12" alt="Logo" />
               <p className="text-center mt-2 text-2xl font-semibold text-[#5DC2BA]">
-                ÚLTIMOS CLUSTERS DISPONIBLES
+                {t("ultimosClusters.titulo")}
               </p>
               <div className="flex flex-col md:flex-row mt-2 w-10/12 textos">
-                <div className="md:w-6/12 pr-3">
+                <div className="md:w-6/12 pr-4 borde">
                   <p className="text-center md:text-end">
-                    Elige tu terreno hasta <span className="estiloLetra2">48 meses</span> sin intereses
+                  {t("ultimosClusters.col1.span1")} <span className="estiloLetra2">{t("ultimosClusters.col1.span2")}</span> {t("ultimosClusters.col1.span3")}
                   </p>
                 </div>
                 <div className="md:w-6/12 mt-2 md:mt-0 md:ml-3">
                   <p className="text-center md:text-start">
-                    Mensualidades desde <span className="estiloLetra">$6,496 MXN</span>
+                  {t("ultimosClusters.col2.span1")} <span className="estiloLetra">$6,496 MXN</span>
                   </p>
                 </div>
               </div>
