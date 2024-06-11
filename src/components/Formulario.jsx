@@ -124,11 +124,11 @@ function Formulario() {
                 value={t("formulario.siguiente")}
                 className="w-28 bg-[#59C2BB] text-white font-semibold cursor-pointer hover:opacity-90 mt-3"
                 onClick={async () => {
-                  // Suponiendo que solo quieres validar ciertos campos en el primer paso
+                  // Validar ciertos campos en el primer paso
                   const isStep1Valid = await trigger(['nombre', 'apellidos', 'correo', 'ciudad', 'telefono']);
                   
                   if (isStep1Valid) {
-                    // Solo avanza al siguiente paso si los campos son válidos
+                    // Solo se avanza al siguiente paso si los campos son válidos
                     setformStep(2);
                   }
                 }}

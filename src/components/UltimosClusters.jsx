@@ -11,16 +11,16 @@ function UltimosClusters() {
   return (
     <div className="contenedorUltimosClusters">
       <div className="w-full md:w-2/3 flex flex-wrap justify-center items-center py-10">
-        <img src={planta1} className="planta1" alt="Planta 1" />
+        <img src={planta1} className="planta1" alt="Planta 1" loading="lazy" />
         
         <div className="w-full md:w-6/12 flex justify-center md:justify-end items-center">
-          <img src={ultimos} className="mapa z-10" alt="Mapa" />
+          <img src={ultimos} className="mapa z-10" alt="mapa" loading="lazy" />
         </div>
         
         <div className="w-full md:w-6/12 flex justify-center md:justify-start items-center contenedorCirculo">
           <div className="circulo_ultimosClusters">
             <div className="flex flex-col justify-center items-center">
-              <img src={logo} className="w-40 mt-12" alt="Logo" />
+              <img src={logo} className="w-40 mt-12" alt="logo" loading="lazy"/>
               <p className="text-center mt-2 text-2xl font-semibold text-[#5DC2BA]">
                 {t("ultimosClusters.titulo")}
               </p>
@@ -40,7 +40,7 @@ function UltimosClusters() {
           </div>
         </div>
         
-        <img src={planta2} className="planta2" alt="Planta 2" />
+        <img src={planta2} className="planta2" alt="Planta 2" loading="lazy" />
       </div>
       <Cotizador/>
     </div>

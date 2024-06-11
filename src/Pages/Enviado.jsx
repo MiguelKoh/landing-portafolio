@@ -10,7 +10,7 @@ function Enviado() {
     <div className="flex flex-wrap justify-center xs:items-start xs:mt-12 md:mt-0 md:items-center h-[87vh] bg-image-enviado relative">
       <div className="flex flex-wrap justify-center xs:w-full md:w-4/5">
         <div className="w-full flex justify-center">
-          <img src={logo} alt="logo" className="xs:w-52 md:w-80" />
+          <img src={logo} alt="logo" className="xs:w-52 md:w-80"/>
         </div>
         <div className=" flex flex-col justify-center items-center xs:w-full md:w-6/12 text-center">
           <p className="xs:text-2xl md:text-5xl text-[#5DC2BA] font-semibold">{t("enviado.p1")}</p>
